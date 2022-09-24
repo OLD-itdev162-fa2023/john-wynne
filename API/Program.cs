@@ -1,7 +1,10 @@
 using Persistence;
 
-
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddControllers();
+builder.Services.AddCors();
 
 // Add services to the container.
 
@@ -21,6 +24,11 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
+
+app.UseCors(policy => policy
+.AllowAnyHeader()
+.AllowAnyMethod()
+.WithOrigins("http://localhost4200"));
 
 app.UseAuthorization();
 
