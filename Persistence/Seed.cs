@@ -16,17 +16,17 @@ namespace Persistence
                 {
                     new Post {
                         Title = "First post",
-                        Body = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        Body = "First post body here",
                         Date = DateTime.Now.AddDays(-10)
                         },
                     new Post {
                         Title = "Second post",
-                        Body = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                        Body = "Second post body.....good blog stuff",
                         Date = DateTime.Now.AddDays(-7)
                         },
                     new Post {
                         Title = "Third post",
-                        Body = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        Body = "Third post body...seems to be lacking content",
                         Date = DateTime.Now.AddDays(-4)
                         }
                 };
