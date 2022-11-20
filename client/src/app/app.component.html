@@ -1,7 +1,20 @@
-<h1>{{title}}</h1>
+<mat-toolbar color="primary">
+  <a mat-icon-button class="example-icon" routerLink="/" aria-label="Example icon-button with menu icon">
+    <mat-icon>home</mat-icon>
+  </a>
+  <span>{{title}}</span>
+  <span class="example-spacer"></span>
+  <a mat-icon-button class="example-icon" routerLink="/create" aria-label="Create a new post">
+    <mat-icon>add</mat-icon>
+  </a>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
 
-<div *ngFor="let post of posts">
-  <h2>{{post.title}}</h2>
-  <hr />
-  <p>{{post.body}}</p>
+<div>
+  <router-outlet></router-outlet>
 </div>
