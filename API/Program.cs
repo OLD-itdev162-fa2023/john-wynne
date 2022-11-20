@@ -29,7 +29,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors(policy => policy
 .AllowAnyHeader()
 .AllowAnyMethod()
-.WithOrigins("http://localhost4200"));
+.WithOrigins("http://localhost:5010", "http://localhost:4200"));
 
 app.UseAuthorization();
 
